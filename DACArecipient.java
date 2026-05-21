@@ -84,8 +84,8 @@ public class DACArecipient {
                this.uscisNumber.equals(other.uscisNumber) && this.countryOfOrigin.equals(other.countryOfOrigin);
     }
 
-    // Part 4: printCard (Revised to use jdnToDate and %s for strings)
-    public String printCard() {
+    // Part 4: printCard (FIXED)
+    public void printCard() {
         String card = String.format("╔══════════════════════════════════════════════════════════════════════╗%n");
         card += String.format("║%35s%35s║%n", TITLE_USA, "");
         card += String.format("║%60s%10s║%n", TITLE_EAC, "");
@@ -103,7 +103,8 @@ public class DACArecipient {
         card += String.format("║%-25s%-15S%-30s║%n", "", LABEL_EXPIRE_DATE, jdnToDate(expirationDate));
         card += String.format("║%-25s%-45s║%n", ASCII_CREDIT, LABEL_REENTRY_DISCLAIMER);
         card += String.format("╚══════════════════════════════════════════════════════════════════════╝%n");
-        return card;
+
+        System.out.println(card);
     }
 
     public static String jdnToDate(int J) {

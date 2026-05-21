@@ -14,7 +14,7 @@ In addition to these methods, you are being supplied with a `printCard` method f
 ```
 Surname: Mendez, Given Name: Javier, USCIS Number: 56-3-445, Country of Origin: El Salvador, Birthday: 2451564, Valid From Date: 3956753, Expiration Date: 3956840, Sex: M
 ```
-
+is 
 **Part 2:**
 - Add the `equals()` method to your UML diagram and write the code.
 The purpose of this equals() method is to return a boolean representing whether two DACArecipient objects are equivalent __based on the values of their instance variables__.
